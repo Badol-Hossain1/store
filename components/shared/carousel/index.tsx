@@ -2,8 +2,32 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from "next/image";
+
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={className}
+            style={{ ...style, display: "block", background: "black", textEmphasisColor: 'red' }}
+            onClick={onClick}
+        />
+    );
+}
+
+function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={className}
+            style={{ ...style, display: "block", background: "black" }}
+            onClick={onClick}
+        />
+    );
+}
 
 export default function CustomCarousel() {
+
     var settings = {
         dots: true,
         infinite: false,
@@ -11,6 +35,8 @@ export default function CustomCarousel() {
         slidesToShow: 4,
         slidesToScroll: 4,
         initialSlide: 0,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
         responsive: [
             {
                 breakpoint: 1024,
@@ -39,33 +65,28 @@ export default function CustomCarousel() {
         ]
     };
     return (
-        <div className="slider-container">
-            <Slider {...settings}>
+
+        <div className="slider-container rounded-2xl w-[80%] mx-auto bg-[#0B0C10]">
+            <Slider {...settings} className=" pb-[40px]  pt-[48px]">
                 <div>
-                    <h3>1</h3>
+                    <Image className="mx-auto" width={150} height={100} alt="" src='/Vector.svg' />
+                </div>
+                <div >
+                    <Image className="mx-auto" width={160} height={100} alt="" src='/Vector 1.svg' />
                 </div>
                 <div>
-                    <h3>2</h3>
+                    <Image className="mx-auto" width={100} height={100} alt="" src='/Vector 2.svg' />
+                </div >
+                <div >
+                    <Image className="mx-auto" width={160} height={100} alt="" src='/Vector 3.svg' />
+                </div >
+                <div >
+                    <Image className="mx-auto" width={170} height={100} alt="" src='Vector 4.svg' />
                 </div>
-                <div>
-                    <h3>3</h3>
-                </div>
-                <div>
-                    <h3>4</h3>
-                </div>
-                <div>
-                    <h3>5</h3>
-                </div>
-                <div>
-                    <h3>6</h3>
-                </div>
-                <div>
-                    <h3>7</h3>
-                </div>
-                <div>
-                    <h3>8</h3>
-                </div>
+
             </Slider>
         </div>
+
+
     )
 }
