@@ -2,9 +2,19 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Image from "next/image";
+import { CSSProperties, MouseEventHandler } from 'react';
 
-function SampleNextArrow(props) {
+import Image from "next/image";
+interface SampleNextArrowProps {
+    className?: string;
+    style?: CSSProperties;
+    onClick?: MouseEventHandler;
+}
+function SampleNextArrow(props: {
+    className?: string;
+    style?: CSSProperties;
+    onClick?: MouseEventHandler<HTMLDivElement>;
+}) {
     const { className, style, onClick } = props;
     return (
         <div
@@ -15,7 +25,11 @@ function SampleNextArrow(props) {
     );
 }
 
-function SamplePrevArrow(props) {
+function SamplePrevArrow(props: {
+    className?: string;
+    style?: CSSProperties;
+    onClick?: MouseEventHandler<HTMLDivElement>;
+}) {
     const { className, style, onClick } = props;
     return (
         <div

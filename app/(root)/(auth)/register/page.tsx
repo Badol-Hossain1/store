@@ -14,10 +14,10 @@ export default function page() {
     const [selectedOption, setSelectedOption] = useState('');
     const [selectedOption2, setSelectedOption2] = useState('');
 
-    const handleSelectChange = (e) => {
+    const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         setSelectedOption(e.target.value);
     };
-    const handleSelectChange2 = (e) => {
+    const handleSelectChange2 = (e: React.ChangeEvent<HTMLSelectElement>) => {
         setSelectedOption2(e.target.value);
     };
 

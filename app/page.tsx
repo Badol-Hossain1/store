@@ -1,4 +1,5 @@
-import Hero from "@/components/hero";
+
+import Hero from "@/components/containers/hero";
 import Card from "@/components/shared/card";
 import CustomCarousel from "@/components/shared/carousel";
 import Modal from "@/components/shared/modal/modal";
