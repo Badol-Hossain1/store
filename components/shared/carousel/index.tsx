@@ -69,6 +69,9 @@ export default function CustomCarousel() {
         <div className="slider-container rounded-2xl w-[80%] mx-auto bg-[#0B0C10]">
             <Slider {...settings} className=" pb-[40px]  pt-[48px]">
                 <div>
+                    <Image className="mx-auto" width={200} height={100} alt="" src='/company.svg' />
+                </div>
+                <div>
                     <Image className="mx-auto" width={150} height={100} alt="" src='/Vector.svg' />
                 </div>
                 <div >

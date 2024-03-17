@@ -1,3 +1,4 @@
+import Hero from "@/components/hero";
 import Card from "@/components/shared/card";
 import CustomCarousel from "@/components/shared/carousel";
 import Modal from "@/components/shared/modal/modal";
@@ -15,6 +16,7 @@ export default function Home() {
       <div className="h-[112px]"></div>
       <CustomCarousel />
       <div className="h-[112px]"></div>
+      <Hero />
     </div>
   );
 }
