@@ -47,7 +47,7 @@ export default function Hero() {
                 <div className='w-full'>
 
 
-                    <UseCasesSection setIsSelected={setIsSelected} isSelected={isSelected} />
+                    {/* <UseCasesSection setIsSelected={setIsSelected} isSelected={isSelected} /> */}
                 </div>
             </div>
 

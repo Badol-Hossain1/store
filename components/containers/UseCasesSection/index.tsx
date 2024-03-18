@@ -68,11 +68,11 @@ const UseCasesSection: React.FC<HeroSectionProps> = ({ isSelected, setIsSelected
     const carouselRef = useRef<any>()
     React.useEffect(() => {
         if (carouselRef.current) {
-            carouselRef.current.on("select", handleSlideChange);
+            // carouselRef.current.on("select", handleSlideChange);
         }
         return () => {
             if (carouselRef.current) {
-                carouselRef.current.destroy();
+                // carouselRef.current.destroy();
             }
         };
     }, [isSelected]);

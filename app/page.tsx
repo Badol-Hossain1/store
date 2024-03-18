@@ -1,6 +1,8 @@
 
 import Hero from "@/components/containers/hero";
 import Main from "@/components/containers/main";
+import Research from "@/components/containers/research";
+import SolutionSection from "@/components/containers/solutions";
 
 import Card from "@/components/shared/card";
 import { CustomCarousel } from "@/components/shared/carousel";
@@ -22,6 +24,9 @@ export default function Home() {
       <CustomCarousel />
       <div className="h-[112px]"></div>
       <Hero />
+      <Research />
+      <SolutionSection />
+
 
     </div>
   );
