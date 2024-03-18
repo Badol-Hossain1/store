@@ -13,7 +13,7 @@ const buttonVariants = cva(
                 default:
                     'bg-transparent border border-[#222222] text-[#222222] hover:bg-black  hover:text-white dark:bg-black dark:text-black',
                 destructive:
-                    'bg-red-500 text-white hover:bg-red-600 dark:hover:bg-red-600',
+                    'bg-white text-black hover:bg-black hover:text-white dark:hover:bg-red-600',
                 outline:
                     'bg-transparent border border-slate-200 hover:bg-slate-100 dark:border-slate-700 dark:text-black',
                 subtle:
@@ -25,7 +25,7 @@ const buttonVariants = cva(
             },
             size: {
                 default: 'h-10 py-2 px-4 rounded-full',
-                sm: 'h-9 px-2 rounded-md',
+                sm: 'py-2 px-8  rounded-full',
                 lg: 'h-11 px-8 rounded-md',
                 full: 'w-full  px-6 rounded-full',
             },

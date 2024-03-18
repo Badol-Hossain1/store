@@ -1,10 +1,8 @@
 'use client'
 import { buttons } from '@/lib/data'
 import React, { useState } from 'react'
-import HeroSection from '../../shared/heroSection'
 
-
-
+import UseCasesSection from '../UseCasesSection'
 
 export default function Hero() {
     const [isSelected, setIsSelected] = useState(0)
@@ -24,12 +22,12 @@ export default function Hero() {
 
             <div className='flex md:flex-row pt-[48px] flex-col gap-6 justify-between w-full'>
                 <div className='   w-full'>
-                    <div className='w-[70%] mx-auto'>
+                    <div className='md:w-[70%]  w-full mx-auto'>
                         {
                             buttons.map((text, index) => {
                                 return (
 
-                                    <button style={{ width: 'auto' }} onClick={() => setIsSelected(index)} className={isSelected == index ? ' text-sm font-medium py-2 text-white w-auto  rounded-full  px-4  m-4 bg-gradient-to-r from-indigo-600 to-purple-700 ' : 'w-auto px-4 text-white text-sm font-medium py-2 hover:bg-gradient-to-r from-indigo-600 to-purple-700 rounded-full border border-purple-600  m-4'}>
+                                    <button key={index} style={{ width: 'auto' }} onClick={() => setIsSelected(index)} className={isSelected == index ? ' text-sm font-medium py-2 text-white w-auto  rounded-full  px-4  m-4 bg-gradient-to-r from-indigo-600 to-purple-700 ' : 'w-auto px-4 text-white text-sm font-medium py-2 hover:bg-gradient-to-r from-indigo-600 to-purple-700 rounded-full border border-purple-600  m-4'}>
                                         {text}
 
                                     </button>
@@ -46,9 +44,10 @@ export default function Hero() {
 
                 </div>
 
-                <div className='w-[90%]  md:w-full mx-auto'>
+                <div className='w-full'>
 
-                    <HeroSection index={isSelected} />
+
+                    <UseCasesSection setIsSelected={setIsSelected} isSelected={isSelected} />
                 </div>
             </div>
 
