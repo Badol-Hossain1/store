@@ -1,6 +1,7 @@
 
 import GetReport from "@/components/containers/GetReport";
 import BrochureSection from "@/components/containers/brochure";
+import ContactInfo from "@/components/containers/contact";
 import Hero from "@/components/containers/hero";
 import Main from "@/components/containers/main";
 import Research from "@/components/containers/research";
@@ -32,6 +33,7 @@ export default function Home() {
       <BrochureSection />
       <ThemSelves />
       <GetReport />
+      <ContactInfo />
 
 
     </div>
