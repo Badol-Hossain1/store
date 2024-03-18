@@ -47,3 +47,42 @@ export const solutionsData = [
     ],
   },
 ];
+
+export const ThemselvsCard = [
+  {
+    id: 1,
+    value: "3M",
+    title: "FRONTLINE USERS",
+    css: "from-indigo-500 via-purple-500 to-pink-500",
+  },
+  {
+    id: 2,
+    value: "2B",
+    title: "CONVERSATIONS ANALYSED",
+    css: "  from-blue-800 via-blue-500 to-blue-400",
+  },
+  {
+    id: 3,
+    value: "3MX",
+    title: "CONVERSATIONS ANALYSED",
+    css: "from-indigo-500 via-purple-500 to-pink-500",
+  },
+  {
+    id: 4,
+    value: "#1",
+    title: "XM    PLATFORM",
+    css: "  from-blue-900 via-blue-500 to-blue-400",
+  },
+  {
+    id: 5,
+    value: "18,000",
+    title: "CUSTOMERS",
+    css: "from-indigo-500 via-purple-500 to-pink-500",
+  },
+  {
+    id: 6,
+    value: "85%+",
+    title: "OF TH FORTUNE",
+    css: "  from-blue-900 via-blue-500 to-blue-400",
+  },
+];
