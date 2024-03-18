@@ -1,6 +1,6 @@
 import SolutionCard from '@/components/shared/solution-card'
 import { solutionsData } from '@/lib/data'
-import Image from 'next/image'
+
 import React from 'react'
 
 export default function SolutionSection() {

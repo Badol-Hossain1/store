@@ -1,4 +1,5 @@
 
+import BrochureSection from "@/components/containers/brochure";
 import Hero from "@/components/containers/hero";
 import Main from "@/components/containers/main";
 import Research from "@/components/containers/research";
@@ -26,6 +27,7 @@ export default function Home() {
       <Hero />
       <Research />
       <SolutionSection />
+      <BrochureSection />
 
 
     </div>
