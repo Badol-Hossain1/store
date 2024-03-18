@@ -1,10 +1,15 @@
+'use client'
 import { Button, buttonVariants } from '@/components/shared/button/';
 import PassInput from '@/components/shared/placeholderColor/Input';
 
 import Link from 'next/link';
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function page() {
+    const [inputValue, setInputValue] = useState('');
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
+        setInputValue(e.target.value);
+    };
 
 
     return (
@@ -23,17 +28,25 @@ export default function page() {
 
                 <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-lg">
                     <form className="space-y-6" action="#" method="POST">
-                        <input
-                            placeholder='Email Address *'
-                            className='focus:outline-none border-b py-2 text-xs w-full pr-10'
-                            type='email'
-                        />
+                        <div className='flex items-center justify-between hover:border-gray-400  border-b border-gray-300 relative' >
+                            <input
+                                className='bg-[#ffffff00] w-full outline-none py-3 px-2 z-30'
+                                type="text"
+                                name="name"
+                                required
+                                value={inputValue}
+                                onChange={handleInputChange}
+                            />
+                            {/* Conditionally render the label based on input value */}
+                            {inputValue.length === 0 && (
+                                <label className='absolute text-gray-400 text-sm left-2 hover:text-gray-500 z-0'>Email address <span className='text-red-500 font-bold'>*</span></label>
+                            )}
+                        </div>
 
 
 
 
-
-                        <Button className={buttonVariants({ size: 'full', className: '', variant: 'login' })}>
+                        <Button href='/sendEmail' className={buttonVariants({ size: 'full', className: '', variant: 'login' })}>
                             RESET PASSWORD
                         </Button>
 

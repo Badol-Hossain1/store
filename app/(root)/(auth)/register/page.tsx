@@ -21,22 +21,22 @@ export default function page() {
     const togglePasswordVisibility2 = () => {
         setShowPasswordSecond(!showPasswordSecond);
     };
-    const handleInputChange = (e: any): void => {
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
         setInputValue(e.target.value);
     };
-    const handleEmail = (e: any): void => {
+    const handleEmail = (e: React.ChangeEvent<HTMLInputElement>): void => {
         setEmail(e.target.value)
     }
-    const handlePassword = (e: any): void => {
+    const handlePassword = (e: React.ChangeEvent<HTMLInputElement>): void => {
         setPasswod(e.target.value)
     };
-    const handleConfromPassword = (e: any): void => {
+    const handleConfromPassword = (e: React.ChangeEvent<HTMLInputElement>): void => {
         setConfromPass(e.target.value)
     };
-    const handleLastName = (e: any): void => {
+    const handleLastName = (e: React.ChangeEvent<HTMLInputElement>): void => {
         setLastName(e.target.value)
     };
-    const handleConfromEmail = (e: any): void => {
+    const handleConfromEmail = (e: React.ChangeEvent<HTMLInputElement>): void => {
 
         setConfromEmail(e.target.value)
     };

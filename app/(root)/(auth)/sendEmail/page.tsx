@@ -33,7 +33,7 @@ export default function page() {
 
 
 
-                    <Link className='text-blue-400 text-xs' href='/login'>Go back to Login</Link>
+                    <Link className='text-[#F09A34] text-center flex justify-center mt-2 text-xs' href='/login'>Go back to Login</Link>
 
 
                 </div>
