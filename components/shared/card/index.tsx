@@ -14,20 +14,20 @@ export default function Card() {
         <>
             <div className='h-[100px]'></div>
             <div className='text-[#131314] flex flex-col text-center'>
-                <p className='font-normal text-sm'>EXPERIENCE MANAGEMENT</p>
-                <span className=' text-2xl rubik '>Three suites to create exceptional customer</span>
-                <span className=' text-2xl rubik '>frontlines, high-performing teams, and products</span>
-                <span className='text-2xl rubik  '> people love. All on one platform.</span>
+                <p className='font-normal text-sm md:mb-0 mb-4'>EXPERIENCE MANAGEMENT</p>
+                <span className=' md:text-2xl rubik '>Three suites to create exceptional customer</span>
+                <span className=' md:text-2xl rubik '>frontlines, high-performing teams, and products</span>
+                <span className='md:text-2xl rubik  '> people love. All on one platform.</span>
             </div>
             <div className='h-[112px]'></div>
-            <div className="grid px-2 md:px-0 md:grid-cols-3  w-full h-full gap-4">
+            <div className="grid md:grid-cols-2 w-full lg:grid-cols-3 grid-cols-1 overflow-hidden gap-4 md:px-10  ">
                 {contacts.map((contact, index) => (
-                    <div key={index} className="max-w-sm    bg-white overflow-hidden shadow-md">
+                    <div key={index} className=" mx-3 md:mx-0   bg-white overflow-hidden shadow-md">
                         <div className="px-6 pt-[32px]">
-                            <div className={`px-6  font-semibold text-xl text-center mb-2  text-transparent bg-clip-text bg-gradient-to-r  ${contact.gradientColor}`}>
+                            <div className={`md:px-6  font-semibold md:text-xl text-center mb-2  text-transparent bg-clip-text bg-gradient-to-r  ${contact.gradientColor}`}>
                                 {contact.title}
                             </div>
-                            <p className="text-[#333333] font-light text-center text-base">
+                            <p className="text-[#333333]  font-light text-center md:text-base">
                                 {contact.description}
                             </p>
                         </div>
@@ -39,12 +39,12 @@ export default function Card() {
                         <div className="flex justify-center pt-[48px] pb-[48px]">
                             <Image alt='' width={300} height={300} src={contact.imageSrc} />
                         </div>
-                        <div className='flex justify-around pb-[32px] '>
-                            <Button className={buttonVariants({ size: 'default', className: '', variant: 'default' })}>
+                        <div className='flex  flex-col-reverse text-center justify-around pb-[32px] '>
+                            <Button className={buttonVariants({ size: 'default', className: 'w-[80%] mx-auto', variant: 'default' })}>
                                 {contact.buttonText}
                             </Button>
-                            <Link href='/products' className='flex gap-2 items-center text-[#131314]'>Learn More
-                                <Image alt='' width={12} height={10} src='/arrow_outward.svg' />
+                            <Link href='/products' className='flex justify-center  gap-2 pb-6  items-center text-[#131314]'>Learn More
+                                <Image className='' alt='' width={12} height={10} src='/arrow_outward.svg' />
                             </Link>
                         </div>
                     </div>
