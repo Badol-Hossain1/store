@@ -23,3 +23,27 @@ export const data = [
   "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet...",
   "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui...",
 ];
+
+export const solutionsData = [
+  {
+    title: "Solutions",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Viverra dictum ultricies aliquam amet. Eget imperdiet nisi nulla viverra lectus. Commodo libero enim cursus varius ultrices feugiat. Risus pellentesque aliquam tortor adipiscing lorem. Ipsum dui eget nullam at.",
+    items: [
+      { imageSrc: "/Vector5.svg", text: "Cloud Based" },
+      { imageSrc: "/Vector5.svg", text: "On-Prem" },
+      { imageSrc: "/Vector5.svg", text: "High Volume Recruitment" },
+      { imageSrc: "/Vector5.svg", text: "HR Marketplace" },
+    ],
+  },
+  {
+    title: "Let’s Work Together",
+    description:
+      "Commodo libero enim cursus varius ultrices feugiat. Risus pellentesque aliquam tortor adipiscing lorem. Ipsum dui eget nullam at. Lorem ipsum dolor sit amet consectetur. Viverra dictum ultricies aliquam amet. Eget imperdiet nisi nulla viverra lectus.",
+    items: [
+      { imageSrc: "/Vector5.svg", text: "Recruitment Agencies & Platforms" },
+      { imageSrc: "/Vector5.svg", text: "Public Sector / Government" },
+      { imageSrc: "/Vector5.svg", text: "Schools, Non-Profits & Charities" },
+    ],
+  },
+];
