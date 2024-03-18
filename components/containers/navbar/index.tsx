@@ -1,4 +1,5 @@
 "use client"
+import { navlinks } from "@/components/data/data";
 import { Button } from "@/components/shared/button";
 import Image from "next/image";
 // import AppleLogo from "@/public/asset/image 85.svg";
@@ -19,42 +20,7 @@ const Navbar = () => {
     const [openDropdown, setOpenDropdown] = useState(null);
 
     // Array of navigation links with sublinks
-    const navlinks = [
-        {
-            label: "PRODUCTS",
-            link: "#",
-            sublinks: [
-                { label: "Product 1", link: "#" },
-                { label: "Product 2", link: "#" },
-                { label: "Product 3", link: "#" }
-            ]
-        },
-        {
-            label: "Solutions",
-            link: "#",
-            sublinks: [
-                { label: "Solution 1", link: "#" },
-                { label: "Solution 2", link: "#" }
-            ]
-        },
-        {
-            label: "About Us",
-            link: "#",
-            sublinks: [
-                { label: "About Us 1", link: "#" },
-                { label: "About Us 2", link: "#" }
-            ]
-        },
-        {
-            label: "Resources",
-            link: "#",
-            sublinks: [
-                { label: "Resource 1", link: "#" },
-                { label: "Resource 2", link: "#" },
-                { label: "Resource 3", link: "#" }
-            ]
-        }
-    ];
+
 
     // Function to handle dropdown toggle
     const handleDropdownToggle = (index: any) => {

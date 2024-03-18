@@ -1,4 +1,5 @@
-import { ThemselvsCard } from '@/lib/data';
+
+import { ThemselvsCard } from '@/components/data/data'
 import React from 'react'
 
 

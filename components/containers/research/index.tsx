@@ -1,5 +1,6 @@
+import { data } from '@/components/data/data'
 import { Button } from '@/components/shared/button'
-import { data } from '@/lib/data'
+
 import Image from 'next/image'
 import React from 'react'
 

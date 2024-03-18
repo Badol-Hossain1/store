@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Button, buttonVariants } from '@/components/shared/button';
+import { options } from '@/components/data/data';
 export default function page() {
     const [selectedOption, setSelectedOption] = useState('')
     const [selectedOption2, setSelectedOption2] = useState('');
@@ -40,7 +41,7 @@ export default function page() {
 
         setConfromEmail(e.target.value)
     };
-    const options = ["Option 01", "Option 02", "Option 03", "Option 04"];
+
     const handleSelect = (option: string): void => {
         setSelectedOption(option);
         setIsOpen(false);

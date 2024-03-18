@@ -1,5 +1,6 @@
+import { solutionsData } from '@/components/data/data'
 import SolutionCard from '@/components/shared/solution-card'
-import { solutionsData } from '@/lib/data'
+
 
 import React from 'react'
 

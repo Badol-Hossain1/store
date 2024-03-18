@@ -15,42 +15,9 @@ import {
 } from "@/components/ui/carousel"
 import { type CarouselApi } from "@/components/ui/carousel"
 import Image from 'next/image'
-
-const data = [
-    {
-        id: 1,
-        name: 'Behaviour & Personality',
-        dec: 'Commodo libero enim cursus varius ultrices feugiat. Risus pellentesque aliquam tortor adipiscing lorem. Ipsum dui eget nullam at. Lorem ipsum dolor sit amet consectetur. Viverra dictum ultricies aliquam amet. Eget imperdiet nisi nulla viverra lectus.  Commodo libero enim cursus varius ultrices feugiat. Risus pellentesque aliquam tortor adipiscing lorem. Ipsum dui eget nullam at. Lo',
-        img: '/image 78.svg',
-        btn: 'View More ',
-        logo: '/card1.svg',
-        discription: 'Lorem ipsum dolor sit amet consectetur. Malesuada montes arcu cursus amet elit cursus. Ac cras tortor eleifend arcu non vel. Sed egestas ullamcorper nunc vitae. Eget cursus ipsum lectus diam nulla nunc. Ac cras tortor eleifend arcu non vel. Bibendum eu purus ullamcorper.'
+import { UseCasesData } from '@/components/data/data';
 
 
-    },
-    {
-        id: 2,
-        name: 'Behaviour & Personality',
-        dec: 'Commodo libero enim cursus varius ultrices feugiat. Risus pellentesque aliquam tortor adipiscing lorem. Ipsum dui eget nullam at. Lorem ipsum dolor sit amet consectetur. Viverra dictum ultricies aliquam amet. Eget imperdiet nisi nulla viverra lectus.  Commodo libero enim cursus varius ultrices feugiat. Risus pellentesque aliquam tortor adipiscing lorem. Ipsum dui eget nullam at. Lo',
-        img: '/image 78.svg',
-        btn: 'View More ',
-        logo: '/card2.svg',
-        discription: 'Lorem ipsum dolor sit amet consectetur. Malesuada montes arcu cursus amet elit cursus. Ac cras tortor eleifend arcu non vel. Sed egestas ullamcorper nunc vitae. Eget cursus ipsum lectus diam nulla nunc. Ac cras tortor eleifend arcu non vel. Bibendum eu purus ullamcorper.'
-
-
-    },
-    {
-        id: 3,
-        name: 'Behaviour & Personality',
-        dec: 'Commodo libero enim cursus varius ultrices feugiat. Risus pellentesque aliquam tortor adipiscing lorem. Ipsum dui eget nullam at. Lorem ipsum dolor sit amet consectetur. Viverra dictum ultricies aliquam amet. Eget imperdiet nisi nulla viverra lectus.  Commodo libero enim cursus varius ultrices feugiat. Risus pellentesque aliquam tortor adipiscing lorem. Ipsum dui eget nullam at. Lo',
-        img: '/image 78.svg',
-        btn: 'View More ',
-        logo: '/card3.svg',
-        discription: 'Lorem ipsum dolor sit amet consectetur. Malesuada montes arcu cursus amet elit cursus. Ac cras tortor eleifend arcu non vel. Sed egestas ullamcorper nunc vitae. Eget cursus ipsum lectus diam nulla nunc. Ac cras tortor eleifend arcu non vel. Bibendum eu purus ullamcorper.'
-
-
-    }
-]
 
 interface HeroSectionProps {
     isSelected: any;
@@ -112,7 +79,7 @@ const UseCasesSection: React.FC<HeroSectionProps> = ({ isSelected, setIsSelected
                         <CarouselContent>
 
 
-                            {data.map((item, index) => (
+                            {UseCasesData.map((item, index) => (
                                 <CarouselItem key={index}>
                                     <div className="p-1">
                                         <Card>

@@ -2,33 +2,9 @@ import Image from "next/image";
 import React, { useState } from "react";
 import './index.css'
 import { CarouselItem } from "./Item";
-let slides = [
-    "https://i.pinimg.com/originals/51/82/ac/5182ac536727d576c78a9320ac62de30.jpg",
-    "https://wallpapercave.com/wp/wp3386769.jpg",
-    "https://wallpaperaccess.com/full/809523.jpg",
-    "https://getwallpapers.com/wallpaper/full/5/c/0/606489.jpg",
-];
-const data = [
-    {
-        id: 1,
-        logo: '/image 78.svg',
-        icon: '/card1.svg',
-        dec: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium fugit voluptates sapiente excepturi cum! Ut accusamus necessitatibus, delectus voluptates non adipisci quo, tempora iure, ullam culpa repellat error quos optio.',
-        btn: 'VIEW MORE'
-    }, {
-        id: 2,
-        logo: '/image 78.svg',
-        icon: '/card2.svg',
-        dec: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium fugit voluptates sapiente excepturi cum! Ut accusamus necessitatibus, delectus voluptates non adipisci quo, tempora iure, ullam culpa repellat error quos optio.',
-        btn: 'VIEW MORE'
-    }, {
-        id: 3,
-        logo: '/image 78.svg',
-        icon: '/car.svg',
-        dec: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium fugit voluptates sapiente excepturi cum! Ut accusamus necessitatibus, delectus voluptates non adipisci quo, tempora iure, ullam culpa repellat error quos optio.',
-        btn: 'VIEW MORE'
-    }
-]
+import { slides } from "@/components/data/data";
+
+
 export const CustomCarousel = () => {
     let [current, setCurrent] = useState(0);
 

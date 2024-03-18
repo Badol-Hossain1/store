@@ -1,8 +1,8 @@
 'use client'
-import { buttons } from '@/lib/data'
+
 import React, { useState } from 'react'
 
-import UseCasesSection from '../UseCasesSection'
+import { buttons } from '@/components/data/data'
 
 export default function Hero() {
     const [isSelected, setIsSelected] = useState(0)
