@@ -20,7 +20,7 @@ export default function Card() {
                 <span className='text-2xl rubik  '> people love. All on one platform.</span>
             </div>
             <div className='h-[112px]'></div>
-            <div className="grid px-2 md:px-0 md:grid-cols-3 md:w-[80%] w-full justify-center h-full mx-auto gap-4">
+            <div className="grid px-2 md:px-0 md:grid-cols-3  w-full h-full gap-4">
                 {contacts.map((contact, index) => (
                     <div key={index} className="max-w-sm    bg-white overflow-hidden shadow-md">
                         <div className="px-6 pt-[32px]">
