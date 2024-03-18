@@ -1,4 +1,5 @@
 
+import GetReport from "@/components/containers/GetReport";
 import BrochureSection from "@/components/containers/brochure";
 import Hero from "@/components/containers/hero";
 import Main from "@/components/containers/main";
@@ -30,6 +31,7 @@ export default function Home() {
       <SolutionSection />
       <BrochureSection />
       <ThemSelves />
+      <GetReport />
 
 
     </div>

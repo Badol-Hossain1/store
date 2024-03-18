@@ -17,11 +17,9 @@ import { type CarouselApi } from "@/components/ui/carousel"
 import Image from 'next/image'
 import { UseCasesData } from '@/components/data/data';
 
-
-
 interface HeroSectionProps {
-    isSelected: any;
-    setIsSelected: any
+    isSelected: boolean;
+    setIsSelected: any;
 }
 
 const UseCasesSection: React.FC<HeroSectionProps> = ({ isSelected, setIsSelected }) => {

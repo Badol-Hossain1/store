@@ -1,5 +1,5 @@
 import ThemselvesCard from '@/components/shared/themselves-card'
-import { ThemselvsCard } from '@/lib/data'
+
 import React from 'react'
 
 export default function ThemSelves() {

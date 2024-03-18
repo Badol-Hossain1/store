@@ -2,8 +2,6 @@
 import { navlinks } from "@/components/data/data";
 import { Button } from "@/components/shared/button";
 import Image from "next/image";
-// import AppleLogo from "@/public/asset/image 85.svg";
-// import WorldLogo from "@/public/asset/language.svg";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -13,7 +11,7 @@ import React, { useState } from "react";
 
 
 
-const Navbar = () => {
+export default function Navbar() {
     // State to manage the side menu
     const [isSideMenuOpen, setMenu] = useState(false);
     // State to manage open dropdown
@@ -129,5 +127,4 @@ const Navbar = () => {
     );
 };
 
-// Export the Navbar component
-export default Navbar;
+
