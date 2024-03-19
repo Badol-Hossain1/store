@@ -63,7 +63,7 @@ export default function ContactInfo() {
         setOpen(false);
     };
     return (
-        <div className='bg-[#EEF2F4] grid grid-cols-1 lg:grid-cols-2 mt-20  justify-center gap-2'>
+        <div id='demo' className='bg-[#EEF2F4] grid grid-cols-1 lg:grid-cols-2 mt-20  justify-center gap-2'>
             <div className='px-10 pt-16'>
                 <h1 className='text-black  font-bold text-2xl mb-4'>Get started with your personalised demo</h1>
                 <p className='font-light leading-4 text-xs text-black'>Lorem ipsum dolor sit amet consectetur. Urna eget quam leo pellentesque quis leo. Scelerisque molestie gravida netus turpis. Nunc vel risus viverra ipsum donec scelerisque.</p>

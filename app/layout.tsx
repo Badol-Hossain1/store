@@ -3,6 +3,8 @@ import { Inter, Rubik } from "next/font/google";
 import "./globals.css";
 import './globalicons.css'
 import Navbar from "@/components/containers/navbar";
+import StoreProvider from "@/StoreProvider";
+import MobileNav from "@/components/shared/MobileNav";
 
 
 
@@ -27,8 +29,11 @@ export default function RootLayout({
     <html lang="en">
 
       <body className={`${inter.className} ${rubik.variable} bg-[#EEF2F4]`}>
-        <Navbar />
-        {children}
+        <StoreProvider>
+          <MobileNav />
+          <Navbar />
+          {children}
+        </StoreProvider>
       </body>
     </html>
   );

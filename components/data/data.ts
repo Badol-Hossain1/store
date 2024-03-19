@@ -132,6 +132,7 @@ export const navlinks = [
     ],
   },
 ];
+
 export const UseCasesData = [
   {
     id: 1,
@@ -203,4 +204,40 @@ export const slides = [
   "https://wallpapercave.com/wp/wp3386769.jpg",
   "https://wallpaperaccess.com/full/809523.jpg",
   "https://getwallpapers.com/wallpaper/full/5/c/0/606489.jpg",
+];
+
+export const navMenu = [
+  {
+    id: 1,
+    label: "Products",
+    link: "#",
+    subMenu: [
+      { label: "Product 1", link: "#" },
+      { label: "Product 2", link: "#" },
+      { label: "Product 3", link: "#" },
+    ],
+  },
+  {
+    id: 2,
+    label: "Solutions",
+    link: "#",
+    subMenu: [
+      { label: "Solution 1", link: "#" },
+      { label: "Solution 2", link: "#" },
+    ],
+  },
+  {
+    id: 3,
+    label: "About Us",
+    link: "#",
+    subMenu: [
+      { label: "About Us 1", link: "#" },
+      { label: "About Us 2", link: "#" },
+    ],
+  },
+  {
+    id: 4,
+    label: "Resources",
+    link: "#",
+  },
 ];
