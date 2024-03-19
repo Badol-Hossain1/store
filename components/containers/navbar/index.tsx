@@ -83,14 +83,15 @@ const Navbar = () => {
                         </li>
                         <li className="uppercase md:block hidden">
                             Support
+
                         </li>
                         <li>
-                            <Button
+                            <Link href='#demo'> <Button
                                 variant="outline"
                                 className="rounded-full md:block hidden uppercase"
                             >
                                 Request Demo
-                            </Button>
+                            </Button></Link>
                         </li>
                         <li className="cursor-pointer " onClick={handleMobileMenu}>
                             <span className="material-symbols-outlined md:hidden block">
