@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 
 import { buttons } from '@/components/data/data'
+import UseCasesSection from '../UseCasesSection'
 
 export default function Hero() {
     const [isSelected, setIsSelected] = useState(0)
@@ -47,7 +48,7 @@ export default function Hero() {
                 <div className='w-full'>
 
 
-                    {/* <UseCasesSection setIsSelected={setIsSelected} isSelected={isSelected} /> */}
+                    <UseCasesSection setIsSelected={setIsSelected} isSelected={isSelected} />
                 </div>
             </div>
 
