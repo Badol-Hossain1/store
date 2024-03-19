@@ -10,6 +10,7 @@ const buttonVariants = cva(
     {
         variants: {
             variant: {
+                common: ' border-none  text-white hover:bg-black  hover:text-white dark:bg-black dark:text-black bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500',
                 default:
                     'bg-transparent border border-[#222222] text-[#222222] hover:bg-black  hover:text-white dark:bg-black dark:text-black',
                 destructive:
