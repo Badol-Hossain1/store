@@ -7,6 +7,7 @@ import 'react-tabs/style/react-tabs.css';
 import ProductMain from '../appleSection';
 import PlatformSection from '../platfrom';
 import Brands from '../brands';
+import BrochureSection from '../brochure';
 
 // import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
@@ -14,14 +15,14 @@ import Brands from '../brands';
 export default function ThereeSuites() {
     const [selectedTabIndex, setSelectedTabIndex] = useState(0);
     return (
-        <div className='mt-20 w-full'>
+        <div className='mt-20  w-full'>
 
             <h1 className='text-center text-[#131314] font-bold md:text-2xl'>Unlock more value with our three suites</h1>
 
-            <div className='flex shadow-md mt-10 justify-center w-full'>
+            <div className='flex  mt-10 justify-center w-full'>
 
                 <Tabs
-                    className='w-full mx-2 md:mx-10'
+                    className='w-full md:mx-10 mx-2 '
                     selectedIndex={selectedTabIndex}
                     onSelect={(index) => setSelectedTabIndex(index)}
                 >
@@ -70,8 +71,14 @@ export default function ThereeSuites() {
 
                             </div>
                         </div>
-                        <ProductMain />
+                        {/* <ProductMain />
                         <PlatformSection />
+                        <BrochureSection title="Download our brochure"
+                            description="Elementum semper praesent amet integer orci. Enim molestie magna morbi tempor. Sed nascetur felis dictum a ac eget arcu tempus. Aliquet diam lorem semper leo nascetur eget. Tincidunt libero tristique nisl tristique vitae potenti eget egestas. Adipiscing morbi senectus et gravida orci pellentesque."
+                            buttonText="Download"
+                        /> */}
+
+
                         {/* <Brands /> */}
                         {/* <h1 className='h-[500px]'></h1> */}
                     </TabPanel>

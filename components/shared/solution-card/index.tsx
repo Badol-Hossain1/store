@@ -13,7 +13,7 @@ interface SolutionCardProps {
 }
 
 const SolutionCard: React.FC<SolutionCardProps> = ({ title, description, items }) => (
-    <div className='bg-[#131314] p-4 shadow-md md:w-[70%] w-full lg:mx-10 md:mx-auto'>
+    <div className='bg-[#131314] p-4 shadow-md md:w-[70%] w-full md:mx-auto'>
         <div className='px-6 py-4'>
             <h1 className='text-xl pb-4 font-semibold'>{title}</h1>
             <p className='text-xs font-light leading-5'>{description}</p>

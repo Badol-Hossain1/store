@@ -430,3 +430,48 @@ export const ProductItemsCard = [
     ],
   },
 ];
+
+export const AccordionItems = [
+  {
+    value: "item-1",
+    trigger:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, to",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iure ex voluptatum, fugit deleniti quod placeat quaerat vel quidem veritatis incidunt labore necessitatibus officiis, quam fugiat perspiciatis molestias? Voluptate, recusandae.",
+  },
+  {
+    value: "item-2",
+    trigger:
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id es",
+    content:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, voluptas ipsum. Eius earum optio sapiente fugiat. Nam ratione rem ex dolores ipsa, quisquam illo aperiam accusantium amet esse corrupti vero!",
+  },
+  {
+    value: "item-3",
+    trigger:
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ma",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, aspernatur molestiae. Reiciendis dolorum mollitia impedit consequuntur consequatur enim nisi, culpa atque velit harum. Doloribus quas, distinctio porro quam suscipit dolor.",
+  },
+  {
+    value: "item-4",
+    trigger:
+      "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed qu",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia debitis, reiciendis beatae voluptatum ullam possimus quasi incidunt reprehenderit, fugiat amet at modi soluta iusto odit. Quidem placeat atque ex delectus!",
+  },
+  {
+    value: "item-5",
+    trigger:
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu",
+    content:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. At voluptatum incidunt repellendus blanditiis assumenda! Possimus, odio quo nemo inventore non deleniti hic modi harum atque beatae laudantium amet et maxime!",
+  },
+  {
+    value: "item-6",
+    trigger:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+    content:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis tenetur dolorem pariatur quod ut, vero temporibus, dicta delectus perferendis voluptas necessitatibus totam illo amet libero atque. Quo reprehenderit hic nihil.",
+  },
+];

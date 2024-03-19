@@ -2,11 +2,13 @@ import React from 'react'
 import Brands from '../brands';
 import { ProductItemsCard } from '@/components/data/data';
 import Pricing from '../pricing';
+import PricingFaq from '../PricingFaq';
+
 
 
 export default function PlatformSection() {
     return (
-        <div className='bg-[#EEF2FA] pt-20'>
+        <div className='bg-[#EEF2FA]  pt-20 md:mx-10 mx-2'>
             <h2 className="text-[#131314] text-center uppercase dark:text-white text-3xl font-bold">Innovate and scale with the unified
                 power of one platform</h2>
             <p className='text-center'>Delivering a connected, intelligent system for ALL your customer and employee profile data,
@@ -30,6 +32,8 @@ export default function PlatformSection() {
             </div>
             <Brands />
             <Pricing />
+            <PricingFaq />
+
 
         </div>
     )

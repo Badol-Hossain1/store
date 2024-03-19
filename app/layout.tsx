@@ -5,6 +5,7 @@ import './globalicons.css'
 import Navbar from "@/components/containers/navbar";
 import StoreProvider from "@/StoreProvider";
 import MobileNav from "@/components/shared/MobileNav";
+import Footer from "@/components/containers/footer";
 
 
 
@@ -33,6 +34,8 @@ export default function RootLayout({
           <MobileNav />
           <Navbar />
           {children}
+
+          <Footer />
         </StoreProvider>
       </body>
     </html>

@@ -1,9 +1,9 @@
 'use client'
 import React, { useState } from 'react'
-import Link from 'next/link'
+
 import { options } from '@/components/data/data';
 import { Button, buttonVariants } from '@/components/shared/button';
-import { Checkbox } from '@radix-ui/react-checkbox';
+
 
 export default function ContactInfo() {
     const [selectedOption, setSelectedOption] = useState('')
@@ -17,16 +17,11 @@ export default function ContactInfo() {
     const [company, setCompany] = useState('');
     const [email, setEmail] = useState('');
     const [number, setNumber] = useState('');
-    const [password, setPasswod] = useState('');
-    const [confromPass, setConfromPass] = useState('');
+
     const [showPassword, setShowPassword] = useState(false)
     const [showPasswordSecond, setShowPasswordSecond] = useState(false)
-    const togglePasswordVisibility = () => {
-        setShowPassword(!showPassword);
-    };
-    const togglePasswordVisibility2 = () => {
-        setShowPasswordSecond(!showPasswordSecond);
-    };
+
+
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
         setInputValue(e.target.value);
     };
@@ -34,12 +29,7 @@ export default function ContactInfo() {
     const handleCompany = (e: React.ChangeEvent<HTMLInputElement>): void => {
         setCompany(e.target.value)
     }
-    const handlePassword = (e: React.ChangeEvent<HTMLInputElement>): void => {
-        setPasswod(e.target.value)
-    };
-    const handleConfromPassword = (e: React.ChangeEvent<HTMLInputElement>): void => {
-        setConfromPass(e.target.value)
-    };
+
     const handleLastName = (e: React.ChangeEvent<HTMLInputElement>): void => {
         setLastName(e.target.value)
     };
