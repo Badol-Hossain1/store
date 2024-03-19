@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import ProductMain from '../appleSection';
+import PlatformSection from '../platfrom';
 
 // import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
@@ -69,7 +70,8 @@ export default function ThereeSuites() {
                             </div>
                         </div>
                         <ProductMain />
-                        <h1 className='h-[500px]'></h1>
+                        <PlatformSection />
+                        {/* <h1 className='h-[500px]'></h1> */}
                     </TabPanel>
                     <TabPanel className='bg-white'>
                         <h2 className='pt-10'>Any content 1</h2>
