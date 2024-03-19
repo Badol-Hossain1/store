@@ -11,7 +11,7 @@ import { AccordionItems } from '@/components/data/data'
 export default function PricingFaq() {
 
     return (
-        <div className='mt-20 '>
+        <div className='mt-[112px] mb-[112px]'>
             <h2 className=' text-center text-[#131314] text-lg'>
                 EXPERIENCE MANAGEMENT
             </h2>
