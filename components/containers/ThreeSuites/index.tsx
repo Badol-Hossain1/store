@@ -6,6 +6,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import ProductMain from '../appleSection';
 import PlatformSection from '../platfrom';
+import Brands from '../brands';
 
 // import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
@@ -71,6 +72,7 @@ export default function ThereeSuites() {
                         </div>
                         <ProductMain />
                         <PlatformSection />
+                        {/* <Brands /> */}
                         {/* <h1 className='h-[500px]'></h1> */}
                     </TabPanel>
                     <TabPanel className='bg-white'>

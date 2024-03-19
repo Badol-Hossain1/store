@@ -394,3 +394,39 @@ export const productsItem = [
     buttonText: "REQUEST PRICING",
   },
 ];
+
+export const ProductItemsCard = [
+  {
+    id: 1,
+    title: "flow",
+    description:
+      "Turpis amet sed ut eget sociis dolor lacus risus. Cras arcu quisque imperdiet commodo sapien mauris laoreet duis massa.",
+    listItems: [
+      "Turpis amet sed ut eget sociis dolor",
+      "Cras arcu quisque imperdiet",
+      "Sapien mauris laoreet duis massa",
+    ],
+  },
+  {
+    id: 2,
+    title: "flow",
+    description:
+      "Turpis amet sed ut eget sociis dolor lacus risus. Cras arcu quisque imperdiet commodo sapien mauris laoreet duis massa.",
+    listItems: [
+      "Turpis amet sed ut eget sociis dolor",
+      "Cras arcu quisque imperdiet",
+      "Sapien mauris laoreet duis massa",
+    ],
+  },
+  {
+    id: 3,
+    title: "flow",
+    description:
+      "Turpis amet sed ut eget sociis dolor lacus risus. Cras arcu quisque imperdiet commodo sapien mauris laoreet duis massa.",
+    listItems: [
+      "Turpis amet sed ut eget sociis dolor",
+      "Cras arcu quisque imperdiet",
+      "Sapien mauris laoreet duis massa",
+    ],
+  },
+];
