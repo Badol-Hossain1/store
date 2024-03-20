@@ -3,8 +3,7 @@ import { Button } from "@/components/ui/button";
 
 
 import Image from "next/image";
-// import AppleLogo from "@/public/asset/image 85.svg";
-// import WorldLogo from "@/public/asset/language.svg";
+
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -20,10 +19,7 @@ import DropDownItem from "../DropDownItem";
 
 
 const Navbar = () => {
-    // State to manage the side menu
-    const [isSideMenuOpen, setMenu] = useState(false);
-    // State to manage open dropdown
-    const [openDropdown, setOpenDropdown] = useState(null);
+
     const isOpenMenu = useAppSelector((state) => state.menu.isOpenMenu)
     const dispatch = useAppDispatch();
 
@@ -37,10 +33,7 @@ const Navbar = () => {
 
 
 
-    // Function to handle dropdown toggle
-    const handleDropdownToggle = (index: any) => {
-        setOpenDropdown(openDropdown === index ? null : index);
-    };
+
 
     // JSX
     return (

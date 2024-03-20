@@ -22,7 +22,7 @@ export default function Products() {
                 <Button className={buttonVariants({ size: 'sm', className: '', variant: 'common' })}>
                     WATCH NOW
                 </Button>
-                <Link href='/products' className='flex justify-center uppercase  gap-2 items-center text-[#131314]'>find your plan
+                <Link href='' className='flex justify-center uppercase  gap-2 items-center text-[#131314]'>find your plan
                     <Image className='' alt='' width={20} height={10} src='/arrow_outward.svg' />
                 </Link>
             </div>

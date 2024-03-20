@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import React, { useState } from "react";
 import './index.css'
@@ -33,14 +34,7 @@ export const CustomCarousel = () => {
 
             </div>
 
-            {/* <div className=" top-0 h-full w-full justify-between items-center flex text-white px-10 text-3xl">
-                <button onClick={previousSlide}>
-                    back
-                </button>
-                <button onClick={nextSlide}>
-                    go
-                </button>
-            </div> */}
+
 
             <div className=" bottom-0 py-4 flex justify-center gap-3 w-full">
                 {slides.map((s, i) => {

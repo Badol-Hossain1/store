@@ -14,7 +14,7 @@ export default function Research() {
                 <div className=''>
                     <p className='text-center md:text-start'>Lorem ipsum dolor sit amet consectetur. Proin tristique sem venenatis nulla maecenas mauris. Est in pellentesque nulla ligula dignissim consectetur volutpat tortor gravida. Adipiscing in eros libero molestie pellentesque mi.</p>
                     <div className='flex md:block justify-center'>
-                        <Button className="mt-6 md:mb-0 mb-2">VIEW ALL</Button>
+                        <Button href='/product' className="mt-6 md:mb-0 mb-2">VIEW ALL</Button>
                     </div>
                 </div>
                 <div>

@@ -99,7 +99,6 @@ const UseCasesSection: React.FC<HeroSectionProps> = ({ isSelected, setIsSelected
         <div className='text-white relative  h-full bg-gradient-to-r from-indigo-600 to-purple-700 px-4 md:p-8'>
             <div className='mb-10'>
 
-                {/* <h1 className='font-semibold text-white pt-4 text-xl'>Behaviour & Personality</h1> */}
                 <h1 className='font-semibold text-white pt-4 text-xl'>
                     {isSelected === 0 ? 'Behaviour & Personality' :
                         isSelected === 1 ? 'Motives & Values' :
@@ -212,7 +211,7 @@ const UseCasesSection: React.FC<HeroSectionProps> = ({ isSelected, setIsSelected
                         </div>
                     </div>
                 </Slider>
-                <h1 className='text-center'> {currentSlide}/{slidesCount}</h1>
+                <h1 className='text-center'>{slidesCount - currentSlide + 1}/{slidesCount}</h1>
 
             </div>
 

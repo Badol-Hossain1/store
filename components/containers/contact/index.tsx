@@ -270,7 +270,7 @@ export default function ContactInfo() {
                         </div>
 
 
-                        <Button className='w-[30%] mt-3'> SUBMMIT</Button>
+                        <Button className='md:w-[30%] w-full mt-3'> SUBMMIT</Button>
 
 
                     </form >
