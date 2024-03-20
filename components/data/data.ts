@@ -210,11 +210,11 @@ export const navMenu = [
   {
     id: 1,
     label: "Products",
-    link: "#",
+    link: "/product",
     subMenu: [
-      { label: "Product 1", link: "#" },
-      { label: "Product 2", link: "#" },
-      { label: "Product 3", link: "#" },
+      { label: "Product page", link: "/product" },
+      { label: "Product 2", link: "/product" },
+      { label: "Product 3", link: "/product" },
     ],
   },
   {

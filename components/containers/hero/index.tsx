@@ -21,9 +21,9 @@ export default function Hero() {
 
 
 
-            <div className='flex md:flex-row pt-[48px] flex-col gap-6 justify-between w-full'>
+            <div className='flex  lg:flex-row pt-[48px] flex-col gap-6 justify-between w-full'>
                 <div className='   w-full'>
-                    <div className='md:w-[70%]  w-full mx-auto'>
+                    <div className='md:w-[70%]  w-full  mx-auto'>
                         {
                             buttons.map((text, index) => {
                                 return (

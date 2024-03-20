@@ -66,7 +66,7 @@ const Navbar = () => {
                             <DropDownItem key={menu.label} menu={menu} />
                             :
                             <li key={menu.label}>
-                                <Link href="/">{menu.label}</Link>
+                                <Link href={menu.link}>{menu.label}</Link>
                             </li>
                         )}
                     </ul>
@@ -105,5 +105,5 @@ const Navbar = () => {
     );
 };
 
-// Export the Navbar component
+
 export default Navbar;

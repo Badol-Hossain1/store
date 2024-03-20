@@ -40,7 +40,7 @@ const MobileNav = () => {
                     </span>
                 </div>
                 <div className='py-20'>
-                    <ul className='text-white'>
+                    <ul className='text-white '>
                         {navMenu.map((menu) => menu.subMenu ?
                             <MobileDropdown key={menu.label} menu={menu} />
                             :

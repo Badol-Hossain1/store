@@ -24,38 +24,38 @@ export default function GetReport() {
                     </button>
                 </div>
             </div>
-            <Carousel className='pt-20'>
+            <Carousel className='pt-20 md:h-[350px] '>
                 <CarouselContent>
-                    <CarouselItem className="md:basis-1/3 basis-2/3 relative">
-                        <div className="group">
+                    <CarouselItem className="md:basis-1/3 basis-2/3">
+                        <div className="group relative">
                             <Image src='/carousel1.svg' height={1000} width={1000} alt='' />
                             <Button className="absolute bottom-4 left-[25px] mt-4 bg-white text-black text-xs border-none px-4 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">WATCH NOW</Button>
                         </div>
                     </CarouselItem>
 
-                    <CarouselItem className="basis-2/3 md:basis-1/3 relative">
+                    <CarouselItem className="basis-2/3 md:basis-1/3 ">
 
-                        <div className="group">
+                        <div className="group relative">
                             <Image src='/Group.svg' height={1000} width={1000} alt='' />
-                            <Button className="absolute bottom-4 left-[25px] mt-4 bg-white text-black border-none px-4 py-2 rounded opacity-0 group-hover:opacity-100 text-xs transition-opacity duration-300">WATCH NOW</Button>
+                            <Button className="absolute bottom-4 left-[25px] mt-4 bg-white text-black border-none px-4 py-2 rounded opacity-0 group-hover:opacity-100 text-xs  transition-opacity duration-300">WATCH NOW</Button>
                         </div>
                     </CarouselItem>
-                    <CarouselItem className="md:basis-1/3 basis-2/3 relative">
-                        <div className="group">
+                    <CarouselItem className="md:basis-1/3 basis-2/3 ">
+                        <div className="group relative">
                             <Image src='/image5.svg' height={1000} width={1000} alt='' />
                             <Button className="absolute bottom-4 left-[25px] mt-4 bg-white text-black text-xs border-none px-4 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">WATCH NOW</Button>
                         </div>
 
                     </CarouselItem>
-                    <CarouselItem className="md:basis-1/3 basis-2/3 relative">
-                        <div className="group">
+                    <CarouselItem className="md:basis-1/3 basis-2/3 ">
+                        <div className="group relative">
                             <Image src='/Group.svg' height={1000} width={1000} alt='' />
                             <Button className="absolute bottom-4 left-[25px] mt-4 bg-white text-black text-xs border-none px-4 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">WATCH NOW</Button>
                         </div>
 
                     </CarouselItem>
-                    <CarouselItem className="md:basis-1/3 basis-2/3 relative">
-                        <div className="group">
+                    <CarouselItem className="md:basis-1/3 basis-2/3 ">
+                        <div className="group relative">
                             <Image src='/super.svg' height={1000} width={1000} alt='' />
                             <Button className="absolute bottom-4 text-xs left-[25px] mt-4 bg-white text-black border-none px-4 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">WATCH NOW</Button>
                         </div>
