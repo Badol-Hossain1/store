@@ -18,7 +18,7 @@ const BrochureSection: React.FC<BrochureDownloadProps> = ({ title, description, 
                     <p className='font-light text-center leading-5 md:leading-6 text-xs px-4 md:px-0 lg:w-[60%] lg:text-justify'>{description}</p>
                 </div>
             </div>
-            <Button href={buttonLink} className={buttonVariants({ size: 'default', className: 'uppercase col-span-1 border-none mx-auto mt-4 md:mt-4 lg:mt-0 ] bg-white', variant: 'login' })}>
+            <Button href={buttonLink} className={buttonVariants({ size: 'default', className: 'uppercase col-span-1 border-none mx-auto mt-4 mb-8 md:mb-0 md:mt-4 lg:mt-0 ] bg-white', variant: 'login' })}>
                 {buttonText}
             </Button>
         </div>

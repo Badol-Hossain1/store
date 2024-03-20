@@ -22,9 +22,9 @@ export default function Home() {
 
       <Main />
       <Card />
-      <div className="h-[112px]"></div>
+      <div className="md:h-[112px] h-[20px]"></div>
       <CustomCarousel />
-      <div className="h-[112px]"></div>
+      <div className="md:h-[112px] h-[40px]"></div>
       <Hero />
       <Research />
       <SolutionSection />

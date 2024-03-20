@@ -9,7 +9,7 @@ export default function Hero() {
     const [isSelected, setIsSelected] = useState(0)
     console.log(isSelected)
     return (
-        <div className='bg-[#0B0C10] pt-[100px] w-full'>
+        <div className='bg-[#0B0C10] md:pt-[100px] pt-6 w-full'>
 
             <div className=''>
                 <h1 className='text-white text-center font-bold text-2xl mb-2'>Use Cases</h1>

@@ -116,10 +116,10 @@ const UseCasesSection: React.FC<HeroSectionProps> = ({ isSelected, setIsSelected
 
 
 
-            <div className="   md:w-[600px] md:mx-auto ">
+            <div className="   md:w-[600px]  md:mx-auto ">
                 <Slider ref={sliderRef} {...settings}>
                     <div >
-                        <div className='bg-white p-5 rounded-md shadow-md'>
+                        <div className='bg-white p-5 shadow-md'>
                             <div className='flex gap-4 items-center'>
                                 <Image src='/google.svg' width={100} height={100} alt='' />
                                 <h1 className='text-black font-bold text-xl'>Google.com</h1>
@@ -156,7 +156,7 @@ const UseCasesSection: React.FC<HeroSectionProps> = ({ isSelected, setIsSelected
 
 
                     <div >
-                        <div className='bg-white p-5 rounded-md shadow-md'>
+                        <div className='bg-white p-5  shadow-md'>
                             <div className='flex gap-4 items-center'>
                                 <Image src='/google.svg' width={100} height={100} alt='' />
                                 <h1 className='text-black font-bold text-xl'>Micro.com</h1>
@@ -182,15 +182,14 @@ const UseCasesSection: React.FC<HeroSectionProps> = ({ isSelected, setIsSelected
 
                         </div>
                     </div>
-
                     <div >
-                        <div className='bg-white p-5 rounded-md shadow-md'>
+                        <div className='bg-white p-5  shadow-md'>
                             <div className='flex gap-4 items-center'>
                                 <Image src='/google.svg' width={100} height={100} alt='' />
-                                <h1 className='text-black font-bold text-xl'>Pitch software gmbh</h1>
+                                <h1 className='text-black font-bold md:text-xl'>Pitch software gmbh</h1>
                             </div>
                             <div className='grid md:grid-cols-2 grid-cols-1 pt-4 gap-4'>
-                                <div className='border-r  text-black'>
+                                <div className='md:border-r  text-black'>
                                     <p>
                                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis qui dolore possimus ullam neque ipsa saepe minima earum cumque tempore maiores alias repellat nisi quae unde adipisci facere, itaque eaque?
                                     </p>
@@ -210,6 +209,8 @@ const UseCasesSection: React.FC<HeroSectionProps> = ({ isSelected, setIsSelected
 
                         </div>
                     </div>
+
+
                 </Slider>
                 <h1 className='text-center'>{slidesCount - currentSlide + 1}/{slidesCount}</h1>
 
